@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealDB</title>
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <header class="py-5">
+        <div class="input-group mb-3 mx-auto">
+          <input
+            type="text"
+            id="input-field"
+            class="form-control"
+            placeholder="Search your meal"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary my-0"
+            type="button"
+            id="button-addon2"
+            onclick="searchMeals()"
+          >
+            Button
+          </button>
+        </div>
+      </header>
+
+      <!-- ================ main section starts ================ -->
+      <main>
+        <section>
+          <div
+            id="meal-section"
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 gy-5"
+          ></div>
+        </section>
+
+        <!-- meal details section -->
+        <section>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="meal-details"
+            tabindex="-1"
+            aria-labelledby="mealDetailsModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="mealDetailsModal">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div
+                  id="meal-details-body"
+                  class="modal-body p-3 p-md-4 p-lg-5"
+                >
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- script -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/meal.js"></script>
+  </body>
+</html>

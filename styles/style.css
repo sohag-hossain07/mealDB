@@ -1,0 +1,31 @@
+.container {
+  font-family: "Fira Code", monospace;
+}
+
+.country {
+  width: 100%;
+  height: 100%;
+  box-shadow: 15px 15px 15px #eef5fbd1, -5px -5px 15px #a9a9a926;
+  border: 1px solid ghostwhite;
+  padding: 2rem;
+}
+
+.input-group {
+  max-width: 600px;
+}
+
+p {
+  margin-bottom: 0.5rem !important;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 1rem 1.5rem auto;
+  width: 200px;
+  padding: 0.5rem 1rem;
+}
+
+img {
+  height: 250px;
+  object-fit: cover;
+}
